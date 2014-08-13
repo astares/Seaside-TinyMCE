@@ -8,6 +8,10 @@ The ""TinyMCE for Seaside"" project provides the [TinyMCE][1] editor libraries f
 ### Project location
 The project is located on STHub at [http://smalltalkhub.com/#!/~TorstenBergmann/TinyMCE][2]
 
+### Demo
+
+You can checkout an online demo on [http://pharo.pharocloud.com/tinymce][3]
+
 ### License
 The Smalltalk code is under MIT License. Note that TinyMCE has an LGPL license.
 
@@ -52,7 +56,7 @@ To render the editor component you just need a textArea tag in your generated HT
     	""Add the script to run TinyMCE""	
     	html script: ' tinymce.init({selector:''textarea''});'
 
-Check out the [TinyMCE][3] documentation for more.
+Check out the [TinyMCE][4] documentation for more.
 
 ## Run locally
 
@@ -64,7 +68,8 @@ After starting the Seaside server you can check out the example at
 
   [1]: http://www.tinymce.com/
   [2]: http://smalltalkhub.com/#!/~TorstenBergmann/TinyMCE
-  [3]: http://www.tinymce.com/
+  [3]: http://pharo.pharocloud.com/tinymce
+  [4]: http://www.tinymce.com/
 "
 Class {
 	#name : #ConfigurationOfTinyMCE,
@@ -241,6 +246,6 @@ ConfigurationOfTinyMCE >> version010: spec [
 		spec timestamp: '8/13/2014 11:03'.
 		spec 
 			package: #'TinyMCE-Core' with: 'TinyMCE-Core-TorstenBergmann.1';
-			package: #'TinyMCE-Examples' with: 'TinyMCE-Examples-TorstenBergmann.1'. ].
+			package: #'TinyMCE-Examples' with: 'TinyMCE-Examples-TorstenBergmann.2'. ].
 
 ]
