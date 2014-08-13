@@ -42,6 +42,10 @@ TMCEExample >> initialize [
 TMCEExample >> renderContentOn: html [
 
 	html heading: 'TinyMCE Demo'.
+	html anchor 
+		url: 'http://smalltalkhub.com/#!/~TorstenBergmann/TinyMCE';
+		with: 'Read the documentation for more.'.
+	html break;break.	
 	html form: [ 
 		html textArea 
 			callback: [ :value | text := value];
