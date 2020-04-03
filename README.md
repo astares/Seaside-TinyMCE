@@ -17,7 +17,14 @@ The project is located on GitHub at [https://github.com/astares/Seaside-TinyMCE]
 The Smalltalk code is under MIT License. Note that TinyMCE has an LGPL license.
 
 ## Installation
-First install Seaside into your Pharo image.
+First install Seaside into your Pharo image:
+
+```Smalltalk
+Metacello new
+  baseline:'Seaside3';
+  repository: 'github://SeasideSt/Seaside:develop/repository';
+  load.
+```
 
 Now you can install the packages necessary for TinyMCE by evaluating:
 
