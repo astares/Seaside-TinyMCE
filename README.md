@@ -24,10 +24,10 @@ Metacello new
 Now you can install the packages necessary for TinyMCE by evaluating:
 
 ```Smalltalk
-   Metacello new
-      baseline:'TinyMCE';
-      repository: 'github://astares/Seaside-TinyMCE:master/src';
-      load
+Metacello new
+   baseline:'TinyMCE';
+   repository: 'github://astares/Seaside-TinyMCE:master/src';
+   load
 ```
 
 ## Run locally
@@ -44,32 +44,32 @@ After starting the Seaside server you can check out the example at
 
 As usual you should create a subclass of WAComponent for an own Seaside web application component. To use the library just register it with your Seaside application.
 
-    register
+```Smalltalk
+register
     |app|
-	  app := WAAdmin register: self asApplicationAt: 'tinymce'.
-	  app addLibrary: TMCEFileLibrary 
+    app := WAAdmin register: self asApplicationAt: 'tinymce'.
+    app addLibrary: TMCEFileLibrary 
+```
 
 ### Render the editor component
 
 To render the editor component you just need a textArea tag in your generated HTML code and modify it to be a TinyMCE Editor using a simple JavaScript. Here is an example Seaside rendering method:
 
-    renderContentOn: html
+```Smalltalk
+renderContentOn: html
 
-	    html heading: 'TinyMCE Demo'.
-    	html form: [ 
-	    	html textArea 
-	       		callback: [ :value | text := value];
-	    		with: text.
-	    	html break.	
-	    	html submitButton: 'Send to server and display'.	
-    	].
-    	html break; horizontalRule.	
-	    html html: text.
+    html heading: 'TinyMCE Demo'.
+    html form: [ 
+        html textArea 
+            callback: [ :value | text := value];
+            with: text.
+        html break.	
+        html submitButton: 'Send to server and display' ].
+        html break; horizontalRule.	
+        html html: text.
 
-    	"Add the script to run TinyMCE"	
-    	html script: ' tinymce.init({selector:''textarea''});'
+        "Add the script to run TinyMCE"	
+        html script: ' tinymce.init({selector:''textarea''});'
+```
 
 Check out the [TinyMCE](http://www.tinymce.com) documentation for more.
-
-
-    
