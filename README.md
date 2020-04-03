@@ -1,8 +1,5 @@
 # Seaside-TinyMCE
-Seaside wrapper for Tiny MCE
-
-# Seaside-TinyMCE
-Seaside wrapper for Tiny MCE
+Seaside wrapper for Tiny MCE Editor
 
 # TinyMCE for Seaside
 
