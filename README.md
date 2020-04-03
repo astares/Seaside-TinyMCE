@@ -33,6 +33,9 @@ Now you can install the packages necessary for TinyMCE by evaluating:
 After starting the Seaside server you can check out the example at
 
     http://localhost:8080/tinymce
+    
+    
+![alt text](screen.png "Screenshot")
 
 ## How to use
 ### Add the file library
