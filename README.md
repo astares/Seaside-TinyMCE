@@ -1,5 +1,5 @@
 # Seaside-TinyMCE
-Seaside wrapper for Tiny MCE Editor
+[Seaside](http://www.seaside.st) wrapper for Tiny MCE Editor
 
 ## Project info
 
@@ -12,7 +12,7 @@ The project is located on GitHub at [https://github.com/astares/Seaside-TinyMCE]
 The Smalltalk code is under MIT License. Note that TinyMCE has an LGPL license.
 
 ## Installation
-First install Seaside into your Pharo image:
+First install Seaside into your [Pharo](http://www.pharo.org) image:
 
 ```Smalltalk
 Metacello new
