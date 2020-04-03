@@ -1,8 +1,6 @@
 # Seaside-TinyMCE
 Seaside wrapper for Tiny MCE Editor
 
-# TinyMCE for Seaside
-
 ## Project info
 
 The "TinyMCE for Seaside" project provides the [TinyMCE][1] editor libraries for use in Seaside applications.
