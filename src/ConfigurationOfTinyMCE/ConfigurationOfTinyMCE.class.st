@@ -102,6 +102,36 @@ ConfigurationOfTinyMCE class >> baseConfigurationClassIfAbsent: aBlock [
 
 ]
 
+{ #category : #catalog }
+ConfigurationOfTinyMCE class >> catalogChangeLog [
+	"Returns a paragraph describing the most important changes in the configuration class."
+	^ ''
+]
+
+{ #category : #catalog }
+ConfigurationOfTinyMCE class >> catalogContactInfo [
+	"Returns a paragraph describing contact information such as email, mailing lists and website."
+	^ 'You can contact the author on the pharo mailinglist'
+]
+
+{ #category : #catalog }
+ConfigurationOfTinyMCE class >> catalogDescription [
+	"Returns a paragraph describing the project"
+	^ 'Seaside wrapper for Tiny MCE'
+]
+
+{ #category : #catalog }
+ConfigurationOfTinyMCE class >> catalogKeyClassesAndExample [
+	"Returns a paragraph or more describing the key classes of your project. You can use Pillar/Pier syntax to layout out the text i.e., ==Code== and - for bullet."
+	^ ' '
+]
+
+{ #category : #catalog }
+ConfigurationOfTinyMCE class >> catalogKeywords [
+	"Returns an array of symbols"
+	^ #(utilities seaside) 
+]
+
 { #category : #private }
 ConfigurationOfTinyMCE class >> ensureMetacello [
 
