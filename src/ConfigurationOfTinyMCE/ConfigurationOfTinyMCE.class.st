@@ -206,12 +206,23 @@ ConfigurationOfTinyMCE >> customProjectAttributes [
 	^ #().
 ]
 
+{ #category : #baselines }
+ConfigurationOfTinyMCE >> dev: spec [
+	<version: #'dev'>
+
+	spec for: #'common' do: [ 
+		spec
+			baseline: 'TinyMCE' with: [ 
+				spec 
+					className: 'BaselineOfTinyMCE';
+					repository: 'github://astares/Seaside-TinyMCE:master/src' ]]
+]
+
 { #category : #'symbolic versions' }
 ConfigurationOfTinyMCE >> development: spec [
 	<symbolicVersion: #'development'>
 
-	spec for: #'common' version: '0.1-baseline'.
-
+	spec for: #'common' version: 'dev'
 ]
 
 { #category : #accessing }
@@ -231,8 +242,7 @@ ConfigurationOfTinyMCE >> project [
 ConfigurationOfTinyMCE >> stable: spec [
 	<symbolicVersion: #'stable'>
 
-	spec for: #'common' version: '0.1.0'.
-
+	spec for: #'common' version: '0.1.0'
 ]
 
 { #category : #versions }
@@ -248,4 +258,16 @@ ConfigurationOfTinyMCE >> version010: spec [
 			package: #'TinyMCE-Core' with: 'TinyMCE-Core-TorstenBergmann.1';
 			package: #'TinyMCE-Examples' with: 'TinyMCE-Examples-TorstenBergmann.2'. ].
 
+]
+
+{ #category : #versions }
+ConfigurationOfTinyMCE >> version020: spec [
+	<version: '0.2.0'>
+
+	spec for: #'common' do: [ 
+		spec
+			baseline: 'TinyMCE' with: [ 
+				spec 
+					className: 'BaselineOfTinyMCE';
+					repository: 'github://astares/Seaside-TinyMCE:0.2.0/src' ]]
 ]
